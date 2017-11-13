@@ -30,6 +30,7 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     self.player = [SGPlayer player];
+    self.player.backgroundMode = SGPlayerBackgroundModeContinue;
     [self.player registerPlayerNotificationTarget:self
                                       stateAction:@selector(stateAction:)
                                    progressAction:@selector(progressAction:)
